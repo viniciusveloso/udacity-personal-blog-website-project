@@ -1,6 +1,4 @@
 body {
-    margin: auto;
-    width: 80%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,6 +19,7 @@ body {
 
 .about {
     display: grid;
+    justify-items: center;
     /* grid-template-columns: 20% 80%; */
     /* gap: 10px; */
 }
@@ -58,6 +57,11 @@ body {
 }
 
 @media(min-width:700px) {
+    body {
+        margin: auto;
+        width: 80%;
+    }
+    
     .about {
         display: grid;
         grid-template-columns: 100px 1fr;
