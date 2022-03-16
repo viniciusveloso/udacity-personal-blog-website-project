@@ -1,0 +1,25 @@
+main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.container > footer {
+    background-color: white;
+    border-top: #0000b3 solid 2px;
+    color: black;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+}
+
+.post-img {
+    width: 70%; 
+}
+
+.post-author {
+    font-size: 0.8em;
+    font-style: italic;
+}
