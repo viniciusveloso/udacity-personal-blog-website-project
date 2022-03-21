@@ -1,0 +1,22 @@
+/****
+    Settings for body and container class to be used across the site
+****/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 30px 1fr 30px;
+    column-gap: 20px;
+}
+
+@media(min-width:900px) {
+    body {
+        margin: auto;
+        width: 80%;
+    }
+}
+

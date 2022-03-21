@@ -1,88 +1,20 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.container {
-    display: grid;    
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto 30px 1fr 30px;
-    column-gap: 20px;
-}
-
-.container > header {
-    grid-column: span 12;
-    background-color:#e6e6e6;
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
-
-.container > nav {
-    grid-column: span 12;
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-    background-color:#0000b3;
-    color: white;
-    padding-left: 10px;
-
-}
-
-.menu-link {
-    color: white;
-    text-decoration: none;
-}
-
-aside {
-    grid-column: span 1;
-    display: flex;
-    flex-direction: column;
-}
-
-aside > div {
-    margin: 5px 5px;
-    padding: 5px 5px;
-}
+@import './site-container.css';
+@import './site-top.css';
+@import './site-middle.css';
+@import './site-footer.css';
 
 main {
-    grid-column: span 11;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-gap: 10px;
 }
 
-#author-img {
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;   
-}
-
-.intro {
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-    align-items: center;
-}
-
-.container > footer {
-    grid-column: span 12;
-    display: flex;
-    align-items: center;
-    background-color:#0000b3;;
-    color: white;
-    font-size: 0.8em;
-}
-
 .card {
+    display: grid;
      border: 1px solid hsl(220, 2%, 74%);
      margin-top: 10px; 
      padding: 5px 10px;
      margin-bottom: 10px;
 }
 
-@media(min-width:900px) {
-    body {
-        margin: auto;
-        width: 80%;
-    }
-}
 

@@ -1,22 +1,30 @@
+@import './site-container.css';
+@import './site-top.css';
+@import './site-middle.css';
+@import './site-footer.css';
+
 main {
     width: 90%;
     margin: auto;
     display: flex;
 }
 
-.container > footer {
-    background-color: white;
-    border-top: #0000b3 solid 2px;
-    color: black;
-}
-
 .image-box {
     display: flex;
+    flex-flow: column;
     justify-content: center;
 }
 
+figcaption {
+    font-size: 0.8em;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+
 .post-img {
     width: 70%; 
+    display: block;
 }
 
 .post-author {
